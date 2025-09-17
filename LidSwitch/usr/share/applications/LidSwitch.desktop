@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=LidSwitch
+Exec=pkexec LidSwitch
+Icon=/usr/share/icons/hicolor/256x256/apps/lid-switch.png
+Terminal=false
