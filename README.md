@@ -6,7 +6,6 @@
 
 <hr>
 
-<div>
-    <h2>Downlaod Package</h2>
-    <a href="https://github.com/Pkpkawe/LidSwitch/blob/main/README/package/lid-switch_1.0.0_amd64.deb" downlaod>lid-switch_1.0.0_amd64.deb</a>
-</div>
+## Downlaod Package
+- Latest: [lid-switch_1.0.0_amd64.deb](https://github.com/Pkpkawe/LidSwitch/blob/main/README/package/lid-switch_1.0.0_amd64.deb)
+
