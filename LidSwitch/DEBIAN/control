@@ -3,6 +3,7 @@ Version: 1.0.0
 Maintainer: Pkpkawe <kawepietro50third@gmail.com>
 Homepage: https://github.com/Pkpkawe/LidSwitch
 Architecture: amd64
+Installed-Size: 12340
 Section: utils
 Priority: optional
 Description: Manages the sleep behavior when closing the device lid
