@@ -1,2 +1,12 @@
-# LidSwitch
-A software solution that modifies the system's logind.conf configuration file to manage the suspend behavior when the notebook lid is closed, offering the option to enable or disable the functionality.
+<div align="center">
+  <img src="https://github.com/Pkpkawe/LidSwitch/README/img/lid-switch.png" />
+  <h1>LidSwitch</h1>
+  <p>A software solution that modifies the system's logind.conf configuration file to manage the suspend behavior when the notebook lid is closed, offering the option to enable or disable the functionality.</p>
+</div>
+
+<hr>
+
+<div>
+    <h2>Downlaod Package</h2>
+    <a href="https://github.com/Pkpkawe/LidSwitch/README/package/lid-switch_1.0.0_amd64.deb" downlaod>lid-switch_1.0.0_amd64.deb</a>
+</div>
