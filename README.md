@@ -7,5 +7,7 @@
 <hr>
 
 ## Downlaod Package
-- Latest: [lid-switch_1.0.0_amd64.deb](https://github.com/Pkpkawe/LidSwitch/blob/main/README/package/lid-switch_1.0.0_amd64.deb)
+### Linux
+- Latest: [lid-switch_1.0.0_amd64.deb](releases/linux/lid-switch_1.0.0_amd64.deb)
+- Versions: [Linux Versions](releases/linux/)
 
