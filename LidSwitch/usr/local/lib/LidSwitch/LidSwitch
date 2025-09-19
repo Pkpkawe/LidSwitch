@@ -1,0 +1,28 @@
+#!/bin/bash
+
+lid_status="/etc/systemd/logind.conf"
+lid_on="/usr/local/lib/LidSwitch/templates/logind_lidon.conf"
+lid_off="/usr/local/lib/LidSwitch/templates/logind_lidoff.conf"
+
+config_env="/usr/local/lib/LidSwitch/config.env"
+
+comparison_on=`diff $lid_on $lid_status`
+comparison_off=`diff $lid_off $lid_status`
+
+if [ $comparison_on=="" ]; then
+    cat $lid_off > $lid_status
+    echo "STATUS_LIDSWITCH=0" > $config_env
+    echo "LidSwitch: Disabled. Your device will not work with the screen down. When lowered, it will go into sleep mode, but you need to restart to complete activation. Reboot your computer?"
+elif [ $comparison_off=="" ]; then
+    cat $lid_on > $lid_status
+    echo "STATUS_LIDSWITCH=1" > $config_env
+    echo "LidSwitch: Enabled. Your device will work with the screen down, but needs to restart to complete activation. Reboot your computer?"
+else
+    echo "Erro"
+fi
+
+systemctl restart systemd-logind.service
+
+/usr/local/lib/LidSwitch/WarningScreen
+
+exit 0

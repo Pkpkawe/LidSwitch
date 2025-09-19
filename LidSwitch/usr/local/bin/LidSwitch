@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo /usr/local/lib/LidSwitch/LidSwitch
+
+exit 0

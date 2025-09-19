@@ -157,7 +157,7 @@ def load_env(arquivo=".env"):
 
 # Screen
 if __name__ == "__main__":
-    message = "LidSwitch: Disabled. Your device will not work with the screen down. When lowered, it will go into sleep mode, but you need to restart to complete activation. Reboot your computer?" if int((load_env("config.env"))["STATUS_LIDSWITCH"]) == 0 else "LidSwitch: Enabled. Your device will work with the screen down, but needs to restart to complete activation. Reboot your computer?"
+    message = "LidSwitch: Disabled. Your device will not work with the screen down. When lowered, it will go into sleep mode, but you need to restart to complete activation. Reboot your computer?" if int((load_env("/usr/local/lib/LidSwitch/config.env"))["STATUS_LIDSWITCH"]) == 0 else "LidSwitch: Enabled. Your device will work with the screen down, but needs to restart to complete activation. Reboot your computer?"
 
     root = tk.Tk()
     app = Application(root, message)
